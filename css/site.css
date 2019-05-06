@@ -104,7 +104,7 @@ app .wrapper {
     }
 }
 
-@media (min-width: 768px) {
+
     app .wrapper {
         flex-direction: row;
     }
@@ -134,7 +134,7 @@ app .wrapper {
 
     }
 
-}
+
 
 
 .app-warm-up-animation-wrapper {
@@ -178,11 +178,11 @@ body {
 }
 
 .c-bg-main {
-    background-image: url("../images/bgr-5.jpg");
+    background-image: url("../images/bgr-4.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #43a8b4;
+    background-color: #ecf0f3;
 }
 .circle {
     border-radius: 50%;
@@ -190,6 +190,7 @@ body {
 
 .user-info {
     margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .user-profile-pic {
@@ -197,4 +198,19 @@ body {
     height: 200px;
     background-repeat: no-repeat;
     background-size:cover
+}
+
+.social-link {
+    color: snow;
+    text-decoration: none;
+}
+
+    .social-link:hover {
+        color: black;
+        text-decoration: none;
+    }
+
+.user-name {
+    color: white;
+    text-align: center;
 }
