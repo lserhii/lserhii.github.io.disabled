@@ -84,7 +84,7 @@
 
 }
 
-.timeline-item:not(.period):hover .timeline-info {
+.timeline-item:not(.period) .timeline-info {
     visibility:visible;
 }
 
@@ -102,9 +102,6 @@
     padding: 0;
 }
 
-    .period .timeline-info {
-        display: none;
-    }
 
     .period .timeline-marker:before {
         background: transparent;
