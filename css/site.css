@@ -24,20 +24,30 @@ app .wrapper {
     color: black!important;
 }
 
-.theme-light .themeable-block a {
+.theme-light .themeable-block-solid {
+    background: rgba(255,255,255,1);
     color: black !important;
 }
+
+    .theme-light .themeable-block a, .theme-light .themeable-block-solid a {
+        color: black !important;
+    }
 
     .theme-dark .themeable-block {
         background: rgba(0,0,0,0.5);
         color: white!important;
     }
 
-.theme-dark .themeable-block a {  
+.theme-dark .themeable-block-solid {
+    background: rgba(0,0,0, 1);
     color: white !important;
 }
 
-.themeable-block a:hover {
+    .theme-dark .themeable-block a, .theme-dark .themeable-block-solid a {
+        color: white !important;
+    }
+
+.themeable-block a:hover, .themeable-block-solid a:hover {
     color: #ff6b6b !important;
 }
 
@@ -69,6 +79,10 @@ app .wrapper {
         vertical-align: text-top;
         top: -2px;
     }
+
+.nav-menu-container {
+    height: 100vh;
+}
 
 .nav-item {
     font-size: 0.9rem;
@@ -129,10 +143,11 @@ app .wrapper {
         flex-direction: row;
     }
 
-    .sidebar {
-        position: sticky;
-        top: 0;
-    }
+.sidebar {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
 
     .main .top-row {
         position: sticky;
@@ -161,7 +176,7 @@ app .wrapper {
     width: 100px;
     padding: 20px;
     margin: 40vh auto;
-    color: deepskyblue;
+    color: black;
 }
 
 .fa-warm-up-animation {
